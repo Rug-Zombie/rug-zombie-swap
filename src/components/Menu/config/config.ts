@@ -23,7 +23,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   },
   {
     label: t('Earn'),
-    href: '/farms',
+    href: '/',
     icon: 'Earn',
     items: [
       {
@@ -45,7 +45,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   },
   {
     label: t('Win'),
-    href: '/prediction',
+    href: '/',
     icon: 'Trophy',
     items: [
       {
@@ -57,7 +57,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   },
   {
     label: t('NFT'),
-    href: `${nftsBaseUrl}`,
+    href: '/',
     icon: 'Nft',
     items: [
       {
