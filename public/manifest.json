@@ -1,0 +1,18 @@
+{
+  "short_name": "RugZombie",
+  "name": "RugZombie",
+  "description": "Bringing your rugged tokens back from the dead.",
+  "homepage_url": "https://exchange.rugzombie.io",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1FC7D4",
+  "background_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "zmbe-low-def.png",
+      "type": "image/x-icon",
+      "sizes": "256x256"
+    }
+  ]
+}
