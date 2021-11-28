@@ -8,8 +8,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
     label: t('Trade'),
     icon: 'Swap',
-    href: '/swap',
-    showItemsOnMobile: false,
+    href: '/',
     items: [
       {
         label: t('Exchange'),
@@ -18,6 +17,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       {
         label: t('Liquidity'),
         href: '/liquidity',
+
       },
     ],
   },
