@@ -44,7 +44,7 @@ const Menu = (props) => {
       activeItem={activeMenuItem?.href}
       activeSubItem={activeSubMenuItem?.href}
       hr
-      buyCakeLabel={t('Buy CAKE')}
+      buyCakeLabel={t('Buy ZMBE')}
       {...props}
     />
   )
