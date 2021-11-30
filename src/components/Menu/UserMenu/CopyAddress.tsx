@@ -96,7 +96,7 @@ const CopyAddress: React.FC<CopyAddressProps> = ({ account, ...props }) => {
           <input type="text" readOnly value={account} />
         </Address>
         <IconButton variant="text" onClick={copyAddress}>
-          <CopyIcon color="primary" width="24px" />
+          <CopyIcon color="secondary" width="24px" />
         </IconButton>
       </Wrapper>
       <Tooltip isTooltipDisplayed={isTooltipDisplayed}>{t('Copied')}</Tooltip>

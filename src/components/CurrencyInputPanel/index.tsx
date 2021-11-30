@@ -10,6 +10,7 @@ import { CurrencyLogo, DoubleCurrencyLogo } from '../Logo'
 
 import { RowBetween } from '../Layout/Row'
 import { Input as NumericalInput } from './NumericalInput'
+import Card from '../Card'
 
 const InputRow = styled.div<{ selected: boolean }>`
   display: flex;
@@ -41,6 +42,12 @@ const Container = styled.div<{ hideInput: boolean }>`
   border-radius: 16px;
   background-color: ${({ theme }) => theme.colors.input};
   box-shadow: ${({ theme }) => theme.shadows.inset};
+`
+const MaxButton = styled(Button)`
+  color: ${({ theme }) => theme.colors.secondary};
+  border: none;
+  box-shadow: none;
+
 `
 interface CurrencyInputPanelProps {
   value: string
@@ -115,9 +122,9 @@ export default function CurrencyInputPanel({
                 }}
               />
               {account && currency && showMaxButton && label !== 'To' && (
-                <Button onClick={onMax} scale="sm" variant="text">
+                <MaxButton onClick={onMax} scale="sm">
                   MAX
-                </Button>
+                </MaxButton>
               )}
             </>
           )}

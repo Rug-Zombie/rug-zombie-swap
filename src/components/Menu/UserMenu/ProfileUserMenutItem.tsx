@@ -23,7 +23,7 @@ const ProfileUserMenuItem: React.FC<ProfileUserMenuItemProps> = ({ isLoading, ha
   const { t } = useTranslation()
 
   const handleClick = () => {
-    history.push(`${nftsBaseUrl}/profile/${account.toLowerCase()}/achievements`)
+    window.location.href = "https://www.rugzombie.io/profile"
   }
 
   const handleNoProfileClick = () => {

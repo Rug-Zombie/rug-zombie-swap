@@ -2664,7 +2664,7 @@
 
 "@pancakeswap/uikit@https://github.com/Rug-Zombie/rug-zombie-swap-uikit.git":
   version "0.58.0"
-  resolved "https://github.com/Rug-Zombie/rug-zombie-swap-uikit.git#33b82ce3981cf42c53448d393360927c11884aae"
+  resolved "https://github.com/Rug-Zombie/rug-zombie-swap-uikit.git#f78b51504de3886b46f780fbafeef2d82fa5fece"
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"
