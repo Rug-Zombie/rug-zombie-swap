@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import styled from 'styled-components'
 import { CurrencyAmount, JSBI, Token, Trade } from '@autoshark-finance/sdk'
-import { Button, Text, ArrowDownIcon, Box, useModal } from '@pancakeswap/uikit'
+import { Button, Text, ArrowDownIcon, Box, useModal, Link } from '@pancakeswap/uikit'
 import { useIsTransactionUnsupported } from 'hooks/Trades'
 import UnsupportedCurrencyFooter from 'components/UnsupportedCurrencyFooter'
 import { RouteComponentProps } from 'react-router-dom'
@@ -487,6 +487,16 @@ export default function Swap({ history }: RouteComponentProps) {
               </Column>
             )}
             {isExpertMode && swapErrorMessage ? <SwapCallbackError error={swapErrorMessage} /> : null}
+            <Button
+              as="a"
+              variant="subtle"
+              width="100%"
+              mt="4px"
+              external
+              href="https://docs.autoshark.finance/resources/swap-as-a-service-integration"
+            >
+              Powered by AutoShark
+            </Button>
           </Box>
         </Wrapper>
       </AppBody>

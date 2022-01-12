@@ -40,7 +40,6 @@ const Menu = (props) => {
       cakePriceUsd={zombiePrice}
       links={config(t)}
       subLinks={activeMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
-      footerLinks={footerLinks(t)}
       activeItem={activeMenuItem?.href}
       activeSubItem={activeSubMenuItem?.href}
       hr
